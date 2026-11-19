@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">LOGO<span>.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="page">
+    <p class="eyebrow">01 / ABOUT ME</p>
+
+    <h1 class="page-title">
+        THE PERSON<br>
+        BEHIND THE<br>
+        <span>IDEAS.</span>
+    </h1>
+
+    <div class="about-layout">
+        <div>
+            <img src="images/profile.jpg"
+                 alt="My profile photo"
+                 class="profile-image">
+        </div>
+
+        <div class="about-text">
+            <h2>Nice to meet you.</h2>
+
+            <p>
+                My name is Your Name. I am a creative
+                individual passionate about developing
+                ideas and turning them into reality.
+            </p>
+
+            <p>
+                I enjoy exploring new concepts,
+                learning new skills and creating work
+                that makes a difference.
+            </p>
+
+            <h2>WHAT I DO</h2>
+
+            <p>01 — Web Design</p>
+            <p>02 — Graphic Design</p>
+            <p>03 — Creative Development</p>
+            <p>04 — Digital Experiences</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 YOUR NAME</p>
+    <p>DESIGNED WITH PURPOSE.</p>
+</footer>
+
+</body>
+</html>
