@@ -75,16 +75,15 @@ header {
 }
 
 .logo {
-    font-family: 'Fira Sans Book', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
-    color: #5a73bf;
-    letter-spacing: -2px;
 }
 
-.logo span {
-    color: #5a73bf;
+.logo img {
+    display: block;
+    height: 48px;
+    width: auto;
 }
 
 nav {
@@ -392,10 +391,3 @@ footer {
         flex-direction: column;
         gap: 12px;
     }
-
-    .logo img {
-        display: block;
-        height: 18px;
-        width: auto;
-    }
-
