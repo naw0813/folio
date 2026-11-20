@@ -16,7 +16,7 @@ body {
 /* ALL HEADINGS */
 
 h1 {
-    font-family: 'Corpulant', sans-serif;
+    font-family: 'Corpulent', sans-serif;
     color: #5a73bf;
     font-weight: normal;
 }
@@ -84,7 +84,7 @@ nav a.active {
 .hero h1 span,
 h1 span {
     color: #5a73bf;
-    font-family: 'Corpulant', sans-serif;
+    font-family: 'Corpulent', sans-serif;
     font-style: normal;
 }
 
@@ -151,7 +151,7 @@ h1 span {
 }
 
 .page-title {
-    font-family: 'Corpulant', sans-serif;
+    font-family: 'Corpulent', sans-serif;
     font-size: clamp(55px, 9vw, 115px);
     line-height: 0.95;
     letter-spacing: -2px;
