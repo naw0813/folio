@@ -393,3 +393,10 @@ footer {
         gap: 12px;
     }
 }
+
+.logo img {
+    display: block;
+    height: 48px;
+    width: auto;
+}
+
