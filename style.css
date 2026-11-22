@@ -155,11 +155,15 @@ h1 span {
 .image-section {
     padding: 15px 8%;
     background: #a8c2e5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .image-row {
     display: flex;
     gap: 16px;
+    align-self: stretch;
 }
 
 .image-row img {
@@ -168,14 +172,11 @@ h1 span {
     object-fit: contain;
 }
 
-.image-section {
-    text-align: right;
-}
-
 .image-section .text-link {
     display: inline-block;
     margin-top: 24px;
 }
+
 /* INTRODUCTION */
 
 .intro {
