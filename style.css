@@ -168,10 +168,13 @@ h1 span {
     object-fit: contain;
 }
 
+.image-section {
+    text-align: right;
+}
+
 .image-section .text-link {
-    display: block;
-    width: fit-content;
-    margin: 24px 0 0 auto;
+    display: inline-block;
+    margin-top: 24px;
 }
 /* INTRODUCTION */
 
