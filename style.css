@@ -169,10 +169,10 @@ h1 span {
 }
 
 .image-section .text-link {
-    display: inline-block;
-    margin-top: 24px;
+    display: block;
+    width: fit-content;
+    margin: 24px 0 0 auto;
 }
-
 /* INTRODUCTION */
 
 .intro {
