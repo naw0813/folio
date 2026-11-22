@@ -155,13 +155,16 @@ h1 span {
 .image-section {
     padding: 15px 8%;
     background: #a8c2e5;
+    display: flex;
+    gap: 16px;
 }
 
 .image-section img {
-    width: 20%;
+    width: calc((100% - 32px) / 3);
     height: 250px;
     object-fit: contain;
 }
+
 
 /* INTRODUCTION */
 
