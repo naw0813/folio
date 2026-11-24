@@ -162,6 +162,7 @@ h1 span {
 
 .image-row {
     display: flex;
+    flex-wrap: wrap;    
     justify-content: flex-start;
     align-items: flex-start;
     gap: 16px;
@@ -172,6 +173,7 @@ h1 span {
 
 .image-row img {
     display: block;
+    flex: 0 1 auto;    
     width: auto;
     height: auto;
     max-width: calc((100% - 32px) / 3);
