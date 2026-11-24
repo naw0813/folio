@@ -88,7 +88,7 @@ header {
 
 nav {
     display: flex;
-    gap: 35px;
+    gap: 15px;
 }
 
 nav a {
@@ -106,7 +106,7 @@ nav a.active {
 /* HERO */
 
 .hero {
-    padding: 50px 12% 30px;
+    padding: 20px 12% 15px;
     background: #a8c2e5;
 }
 
