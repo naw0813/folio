@@ -168,8 +168,10 @@ h1 span {
 
 .image-row img {
     width: calc((100% - 32px) / 3);
-    height: 250px;
-    object-fit: contain;
+    height: auto;
+    object-fit: initial;
+    border: 5px solid transparent;
+    border-radius: 18px;
 }
 
 .image-section .text-link {
