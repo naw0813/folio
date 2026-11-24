@@ -396,7 +396,7 @@ footer {
 .image-row img {
     width: auto;
     height: auto;
-    max-height: 100px;
+    max-height: 150px;
     max-width: calc((100% - 32px) / 3);
 }
 
