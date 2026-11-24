@@ -106,7 +106,7 @@ nav a.active {
 /* HERO */
 
 .hero {
-    padding: 20px 12% 15px;
+    padding: 20px 12% 30px;
     background: #a8c2e5;
 }
 
@@ -377,7 +377,7 @@ footer {
     }
 
     .hero {
-        padding: 30px 8% 20px;
+        padding: 20px 8% 40px;
     }
 
     .hero h1 {
