@@ -178,6 +178,8 @@ h1 span {
     height: auto;
     max-width: calc((100% - 32px) / 3);
     max-height: 250px;
+    min-width: 100%;
+    min-height: 100px;
     box-sizing: border-box;
     border: 5px solid transparent;
     border-radius: 18px;
