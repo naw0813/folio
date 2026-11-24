@@ -377,7 +377,7 @@ footer {
     }
 
     .hero {
-        padding: 70px 8% 40px;
+        padding: 30px 8% 20px;
     }
 
     .hero h1 {
@@ -388,19 +388,26 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+.image-row {
+    flex-direction: column;
+    align-items: flex-start;
+}
 
-    .image-section img {
-        height: 300px;
-    }
+.image-row img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 250px;
+}    
 
     .intro,
     .page {
-        padding: 70px 8%;
+        padding: 30px 8%;
     }
 
     .about-layout {
         grid-template-columns: 1fr;
-        gap: 35px;
+        gap: 25px;
     }
 
     .work-info {
