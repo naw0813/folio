@@ -255,6 +255,9 @@ h1 span {
     max-height: 300px;
     object-fit: contain;
     margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    border-radius: 18px;
 }
 
 .work-info {
