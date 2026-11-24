@@ -251,9 +251,11 @@ h1 span {
 }
 
 .work-item img {
-    width: 30%;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 30%;
     max-height: 300px;
-    object-fit: contain;
     margin-bottom: 20px;
     box-sizing: border-box;
     border: 5px solid transparent;
