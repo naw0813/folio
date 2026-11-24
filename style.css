@@ -167,9 +167,11 @@ h1 span {
 }
 
 .image-row img {
+    display: block;
     width: calc((100% - 32px) / 3);
-    height: auto;
-    object-fit: initial;
+    height: auto !important;
+    object-fit: unset !important;
+    box-sizing: border-box;
     border: 5px solid transparent;
     border-radius: 18px;
 }
@@ -177,13 +179,6 @@ h1 span {
 .image-section .text-link {
     display: inline-block;
     margin-top: 24px;
-}
-.image-section img {
-    width: calc((100% - 32px) / 3);
-    height: auto;
-    object-fit: initial;
-    border: 5px solid transparent;
-    border-radius: 18px;
 }
 
 /* INTRODUCTION */
