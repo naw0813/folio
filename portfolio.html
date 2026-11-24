@@ -61,6 +61,57 @@
 <footer>
     <p>© 2026 NATALIE WHITE</p>
 </footer>
+    
+<script>
+document.querySelectorAll(".image-section img").forEach((img) => {
+    function setBorderColor() {
+        if (!img.naturalWidth) return;
 
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d", { willReadFrequently: true });
+
+        // Shrink the sample for faster processing.
+        canvas.width = 40;
+        canvas.height = 40;
+
+        try {
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            const pixels = ctx.getImageData(
+                0, 0, canvas.width, canvas.height
+            ).data;
+
+            const colors = {};
+
+            // Group similar colors into buckets and find the most frequent.
+            for (let i = 0; i < pixels.length; i += 4) {
+                if (pixels[i + 3] < 128) continue; // Skip transparent pixels.
+
+                const r = Math.round(pixels[i] / 32) * 32;
+                const g = Math.round(pixels[i + 1] / 32) * 32;
+                const b = Math.round(pixels[i + 2] / 32) * 32;
+                const key = `${r},${g},${b}`;
+
+                colors[key] = (colors[key] || 0) + 1;
+            }
+
+            const mostCommon = Object.entries(colors)
+                .sort((a, b) => b[1] - a[1])[0];
+
+            if (mostCommon) {
+                img.style.borderColor = `rgb(${mostCommon[0]})`;
+            }
+        } catch (error) {
+            console.error("Could not read image colors:", error);
+        }
+    }
+
+    if (img.complete) {
+        setBorderColor();
+    } else {
+        img.addEventListener("load", setBorderColor);
+    }
+});
+</script>
+    
 </body>
 </html>
