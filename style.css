@@ -176,6 +176,11 @@ h1 span {
     display: inline-block;
     margin-top: 24px;
 }
+.image-section img {
+    border: 5px solid transparent;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
 
 /* INTRODUCTION */
 
