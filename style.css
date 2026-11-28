@@ -251,13 +251,15 @@ h1 span {
 /* PORTFOLIO */
 
 .work {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 40px 24px;
+    column-count: 3;
+    column-gap: 24px;
 }
 
 .work-item {
-    min-width: 0;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 32px;
+    break-inside: avoid;
 }
 
 .work-item .eyebrow {
@@ -438,14 +440,14 @@ footer {
     }
 @media (max-width: 768px) {
     .work {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 30px 16px;
+        column-count: 2;
     }
 }
 
 @media (max-width: 480px) {
     .work {
-        grid-template-columns: 1fr;
+        column-count: 1;
     }
 }
+
 
